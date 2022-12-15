@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "language-nerd-api"
+version = "0.1.0"
+description = ""
+authors = ["Kimuraz <j.eduardokimura@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "language_nerd_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+djangorestframework = "^3.14.0"
+markdown = "^3.4.1"
+django-filter = "^22.1"
+django-cors-headers = "^3.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
