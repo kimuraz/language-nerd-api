@@ -9,8 +9,6 @@ class LanguageSerializer(serializers.ModelSerializer):
 
 
 class WordSerializer(serializers.ModelSerializer):
-    language = LanguageSerializer()
-
     class Meta:
         model = Word
         fields = '__all__'

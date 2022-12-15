@@ -13,7 +13,7 @@ class Word(models.Model):
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
     word = models.CharField(max_length=255)
     translation = models.CharField(max_length=255)
-    phonetic = models.CharField(max_length=255)
+    phonetic = models.CharField(max_length=255, null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
 
