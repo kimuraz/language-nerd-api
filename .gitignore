@@ -3,3 +3,4 @@
 *.pyo
 db.sqlite3
 .idea
+.env
