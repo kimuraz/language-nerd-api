@@ -20,5 +20,5 @@ from languages.urls import url_patterns as language_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include(language_urls)),
+    path('', include(language_urls)),
 ]
